@@ -263,7 +263,7 @@ let tipoSeleccionado = '';
 (function init(){
   const ay = new Date().getFullYear();
   const sel = document.getElementById('anio');
-  for(let y=ay; y>=ay-3; y--){
+  for(let y=ay; y>=ay+3; y++){
     const o=document.createElement('option'); o.value=y; o.textContent=y;
     if(y===ay) o.selected=true;
     sel.appendChild(o);
